@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  font-family: Mulish, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  background-image: url('../images/Diana.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 700px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 50px;
+  background-color: teal;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li a {
+  padding: 10px 15px;
+  color: white;
+  font-size: 16px;
+}
+
+.menu li a:hover {
+  background-color: white;
+  color: teal;
+  border-radius: 5px;
+  transition: all ease 0.3s;
+}
+
+.menu .active {
+  border-bottom: 3px solid white;
+  font-weight: bolder;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Spectral', serif ;
+}
+
+.name {
+  width: 500px;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  transform: translate(-20%, -50%);
+}
+
+.name p:nth-child(1),
+.name .details {
+  font-size: 16px;
+}
+
+.name h1 {
+  font-weight: bolder;
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.cv-btn {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #D7E9ED;
+  border-radius: 5px;
+  color: teal;
+  font-weight: bolder;
+  border: 2px solid teal;
+  transition: all ease-in-out 0.3s;
+}
+
+.cv-btn:hover {
+  background-color: teal;
+  color: white;
+  transition: all ease-in-out 0.3s;
+  font-size: 20px;
+}
+
+.socials {
+  position: absolute;
+  bottom: 10%;
+  left: 735px;
+  font-size: 32px;
+  display: flex;
+  
+}
+
+.socials a {
+  margin-right: 12px;
+}
+
+.socials i {
+  color: rgb(111, 202, 202);
+}
+
+.socials i:hover {
+  color: teal;
+  transition: all ease 0.3s;
+}
+
+.arrow {
+  align-self: end;
+  width: 50%;
+  height: 15%;
+  margin-bottom: 4rem;
+  position: absolute;
+  bottom: 0px;
+  left: -3%;
+  border-right: 1px solid black;
+}
+
+#about {
+  width: 50%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  color: white;
+}
+
+.about-text h1 {
+  font-size: 60px;
+  color: teal;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  font-style: italic;
+  font-size: 32px;
+}
+
+.about-text p {
+  font-size: 20px;
+}
+
+#projects {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.projects-heading h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  color: teal;
+}
+
+.projects-heading h2 {
+  font-size: 32px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.projects-heading {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-box {
+  width: 350px;
+  height: 500px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 5px 10px gray;
+  position: relative;
+}
+
+.project-box-img {
+  width: 100%;
+  height: 70%;
+}
+
+.project-box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-box-text {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-box-text a{
+  margin: 0px;
+  font-size: 1.1rem;
+  display: block;
+  display: -webkit-box;
+  max-width: 80%;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.project-title {
+  padding: 10px 15px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  border-radius: 0px 0px 10px 10px;
+  color: white;
+  background-color: teal;
+  box-shadow: 2px 2px 10px gray;
+}
+
+.project-box:hover {
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
