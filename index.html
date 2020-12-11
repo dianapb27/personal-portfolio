@@ -11,11 +11,12 @@
   <section id="main">
     <nav>
       <a href="#" class="logo">DP</a>
+      <div class="toggle"></div>
       <ul class="menu">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">My Projects</a></li>
-        <li><a href="#">Contact Me</a></li>
+        <li><a href="#main" class="active">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">My Projects</a></li>
+        <li><a href="#contact-form">Contact Me</a></li>
       </ul>
     </nav>
     <div class="name">
@@ -25,11 +26,11 @@
         I'm a fresh graduate from the famous Le Wagon full-stack web development bootcamp
       </p>
       <a href="#" class="cv-btn">Download CV</a>
-    </div>
-    <div class="socials">
-      <a href="https://github.com/dianapb27"><i class="fab fa-github-square"></i></a>
-      <a href="https://www.linkedin.com/in/diana-pinon-37635752/"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/dianapinonb/"><i class="fab fa-instagram-square"></i></a>
+      <div class="socials">
+        <a href="https://github.com/dianapb27"><i class="fab fa-github-square"></i></a>
+        <a href="https://www.linkedin.com/in/diana-pinon/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/dianapinonb/"><i class="fab fa-instagram-square"></i></a>
+      </div>
     </div>
     <!-- <div class="arrow"></div> -->
   </section>
@@ -50,34 +51,81 @@
       <!-- project 1 -->
       <div class="project-box">
         <div class="project-box-img">
-          <div class="project-title">Booklub</div>
-          <img src="images/booklubog.png" alt="">
+          <div class="project-title">
+            <a href="https://www.booklub.xyz/">Booklub</a>
+          </div>
+          <img src="images/booklubog.png" alt="Booklub">
         </div>
         <div class="project-box-text">
-          <a href="#">Booklub is an app that lets you connect with book lovers around the globe</a>
+          <a href="https://www.booklub.xyz/">
+            Booklub is an app that lets you connect with book lovers around the globe
+          </a>
+        </div>
+        <div class="project-technologies">
+          Ruby on Rails, JavaScript, HTML5, CSS, Heroku, Git, Github, PostgreSQL, API calls
         </div>
       </div>
       <!-- project 2 -->
       <div class="project-box">
         <div class="project-box-img">
-          <div class="project-title">Schoolgoal</div>
-          <img src="images/schoolgoal.PNG" alt="">
+          <div class="project-title">
+            <a href="https://schoolgoal.herokuapp.com/">Schoolgoal</a>
+          </div>
+          <img src="images/schoolgoal.PNG" alt="Schoolgoal">
         </div>
         <div class="project-box-text">
-          <a href="#">Schoolgoal is a platform to help connect tutors with students</a>
+          <a href="https://schoolgoal.herokuapp.com/">
+            Schoolgoal is a platform to help connect tutors with students
+          </a>
+        </div>
+        <div class="project-technologies">
+          Ruby on Rails, JavaScript, HTML5, CSS, Heroku, Git, Github, PostgreSQL
         </div>
       </div>
       <!-- project 3 -->
       <div class="project-box">
         <div class="project-box-img">
-          <div class="project-title">Mr. Cocktail</div>
-          <img src="images/mr cocktail.PNG" alt="">
+          <div class="project-title">
+            <a href="https://mister-cocktail-dp.herokuapp.com/">Mr. Cocktail</a>
+          </div>
+          <img src="images/mr cocktail.PNG" alt="Mr. Cocktail">
         </div>
         <div class="project-box-text">
-          <a href="#">Mr. Cocktails allows you to create and save cocktail recipes</a>
+          <a href="https://mister-cocktail-dp.herokuapp.com/">
+            Mr. Cocktail allows you to create and save cocktail recipes
+          </a>
+        </div>
+        <div class="project-technologies">
+          Ruby on Rails, HTML5, CSS, Heroku, PostgreSQL
         </div>
       </div>
     </div>
+  </section>
+  <section id="contact-btn">
+    <h1>Is there a project I can help you with?</h1>
+    <a href="#contact-form">Contact Me 😉</a>
+  </section>
+  <section id="contact-form">
+    <form action="">
+      <div class="contact-left">
+        <h1 class="contact-left-heading">Reach out</h1>
+        <div class="form-name">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Your name" id="name">
+        </div>
+        <div class="form-email">
+          <label for="email">Email</label>
+          <input type="text" placeholder="your-email@mail.com" id="email">
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="20" rows="10" placeholder="Write your message..."></textarea>
+        </div>
+        <button>Send</button>
+      </div>
+    </form>
   </section>
 </body>
 </html>

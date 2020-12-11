@@ -7,12 +7,20 @@ body {
   font-family: Mulish, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+.toggle {
+  display: none;
 }
 
 #main {
@@ -23,8 +31,8 @@ a {
   position: relative;
   background-image: url('../images/Diana.jpg');
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: 700px;
+  background-position: left center;
+  background-size: 600px;
 }
 
 nav {
@@ -74,11 +82,12 @@ nav {
 }
 
 .name {
+  margin-top: 100px;
   width: 500px;
   position: absolute;
-  left: 55%;
+  left: 80%;
   top: 50%;
-  transform: translate(-20%, -50%);
+  transform: translate(-80%, -50%);
 }
 
 .name p:nth-child(1),
@@ -115,11 +124,9 @@ nav {
 }
 
 .socials {
-  position: absolute;
-  bottom: 10%;
-  left: 735px;
   font-size: 32px;
   display: flex;
+  margin-top: 150px;
   
 }
 
@@ -128,23 +135,12 @@ nav {
 }
 
 .socials i {
-  color: rgb(111, 202, 202);
+  color: rgba(111, 202, 202, 1);
 }
 
 .socials i:hover {
   color: teal;
   transition: all ease 0.3s;
-}
-
-.arrow {
-  align-self: end;
-  width: 50%;
-  height: 15%;
-  margin-bottom: 4rem;
-  position: absolute;
-  bottom: 0px;
-  left: -3%;
-  border-right: 1px solid black;
 }
 
 #about {
@@ -209,7 +205,7 @@ nav {
 
 .project-box {
   width: 350px;
-  height: 500px;
+  height: 400px;
   margin: 20px;
   border-radius: 10px;
   overflow: hidden;
@@ -219,7 +215,7 @@ nav {
 
 .project-box-img {
   width: 100%;
-  height: 70%;
+  height: 60%;
 }
 
 .project-box-img img {
@@ -249,7 +245,7 @@ nav {
   -webkit-box-orient: vertical;
 }
 
-.project-title {
+.project-title a {
   padding: 10px 15px;
   position: absolute;
   top: 0px;
@@ -260,9 +256,279 @@ nav {
   color: white;
   background-color: teal;
   box-shadow: 2px 2px 10px gray;
+  text-decoration: none;
 }
 
 .project-box:hover {
   transform: translateY(-10px);
   transition: all ease 0.3s;
+  z-index: 10;
+}
+
+.project-technologies {
+  width: 100%;
+  height: 10%;
+  font-size: 12px;
+  overflow-wrap: normal;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+#contact-btn {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-btn h1 {
+  font-size: 2rem;
+  margin: 20px;
+  padding-right: 5px;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+}
+
+#contact-btn a {
+  background-color: white;
+  width: 180px;
+  height: 60px;
+  margin: 10px;
+  color: teal;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  transition: all ease 0.3s;
+}
+
+#contact-btn a:hover {
+  font-size: 1.2rem;
+  background-color: teal;
+  color: white;
+  transition: all ease 0.3s;
+}
+
+#contact-form {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  background-color: white;
+}
+
+#contact-form form {
+  display: flex;
+  width: 70%;
+  height: 60vh;
+  background-color: black;
+}
+
+.contact-left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-right {
+  width: 60%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-left-heading {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: teal;
+}
+
+.form-email, .form-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-email label, 
+.form-name label {
+  font-size: 24px;
+  color: white;
+}
+
+.form-email input, 
+.form-name input {
+  font-size: 20px;
+  font-family: inherit;
+  height: 30px;
+  width: 250px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  margin: 10px 0px;
+}
+
+.form-email input::placeholder, 
+.form-name input::placeholder {
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.form-email input:focus, 
+.form-name input:focus {
+  border-bottom: 2px solid teal;
+  transition: all ease 0.3s;
+}
+
+.message {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message label {
+  font-size: 24px;
+  margin-bottom: 4px;
+  color: white;
+  margin-top: 24px;
+}
+
+.contact-right textarea {
+  width: 100%;
+  height: 300px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 10px;
+  font-family: inherit;
+  color: white;
+}
+
+.contact-right textarea::placeholder {
+  letter-spacing: 1px;
+}
+
+.contact-right button {
+  width: 100%;
+  height: 50px;
+  background-color: teal;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  margin: 0px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+@media(max-width: 1270px) {
+  #main {
+    background-size: 500px 100vh;
+    background-position: left center;
+  }
+  .name {
+    left: 85%;
+    top: 50%;
+  }
+  .socials {
+    left: 41%;
+    bottom: 10%;
+  }
+  #contact-form form {
+    width: 90%;
+  }
+  #about {
+    width: 70%;
+  }
+}
+
+@media(max-width: 1150px) {
+  #main {
+    background-size: 500px 100vh;
+    background-position: left center;
+  }
+  .name {
+    left: 85%;
+    top: 50%;
+  }
+  #projects {
+    height: auto;
+  }
+  .projects-container {
+    flex-wrap: wrap;
+  }
+  .project-box {
+    flex-grow: 1;
+  }
+  .project-box-text {
+    text-align: center;
+  }
+}
+
+@media(max-width: 1080px) {
+  #main {
+    background-image: none;
+  }
+  .name {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #contact-form form {
+    width: 95%;
+  }
+  #about {
+    width: 95%;
+  }
+  .about-text h1,
+  .projects-heading h1 {
+    font-size: 44px;
+  }
+  .about-text h2,
+  .projects-heading h2 {
+    font-size: 24px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+  .contact-left-heading {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .form-email label, 
+  .form-name label,
+  .message label {
+    font-size: 20px;
+  }
+  .form-email input, 
+  .form-name input,
+  .contact-right textarea {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 900px) {
+  .toggle {
+    display: block;
+  }
+  .toggle::before {
+    content: '\f0c9';
+    font-family: fontAwesome;
+    line-height: 0px;
+    margin-left: 25px;
+  }
 }
