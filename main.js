@@ -14,10 +14,11 @@ menuElement.forEach((option) => {
   });
 })
 
-// const menuElement = document.querySelectorAll(".menu-element");
-// menuElement.forEach((option) => {
-//   option.addEventListener("click", (event) => {
-//     document.querySelector(".active").classList.toggle("active");
-//     event.currentTarget.classList.toggle("active");
-//   });
-// })
+const options = menu.getElementsByClassName("menu-element");
+for (let i = 0; i < options.length; i++) {
+  options[i].addEventListener("click", function() {
+    let current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
