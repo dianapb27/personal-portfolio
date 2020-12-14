@@ -1,0 +1,163 @@
+#main {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  background-image: url('../images/Diana.jpg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 600px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 10px 50px;
+  background-color: #11A693;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.navbar .menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.menu li a:hover {
+  background-color: white;
+  color: #11A693;
+  border-radius: 5px;
+  transition: all ease 0.3s;
+}
+
+.menu li .active {
+  /* border-bottom: 3px solid white;
+  font-weight: bolder; */
+}
+
+.menu .close {
+  display: none;
+  text-align: right;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.menu .close:hover {
+  transform: rotate(0.5turn);
+  transition: all ease 0.3s;
+}
+
+.navbar .mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.name {
+  margin-top: 100px;
+  width: 500px;
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  transform: translate(-80%, -50%);
+}
+
+.name p:nth-child(1),
+.name .details {
+  font-size: 16px;
+}
+
+.name h1 {
+  font-weight: bolder;
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.avatar-large {
+  display: none;
+  height: 200px;
+  width: 200px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 25px;
+  border: 3px solid #11A693;
+}
+
+.cv-btn {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #D7E9ED;
+  border-radius: 5px;
+  color: #11A693;
+  font-weight: bolder;
+  border: 2px solid #11A693;
+  transition: all ease-in-out 0.3s;
+}
+
+.cv-btn:hover {
+  background-color: #11A693;
+  color: white;
+  transition: all ease-in-out 0.3s;
+  font-size: 20px;
+}
+
+.socials {
+  font-size: 32px;
+  display: flex;
+  margin-top: 150px;
+  
+}
+
+.socials a {
+  margin-right: 12px;
+}
+
+.socials i {
+  color: rgba(111, 202, 202, 1);
+}
+
+.socials i:hover {
+  color: #11A693;
+  transition: all ease 0.3s;
+}

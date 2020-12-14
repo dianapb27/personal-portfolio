@@ -1,0 +1,158 @@
+#contact-btn {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-btn h1 {
+  font-size: 2rem;
+  margin: 20px;
+  padding-right: 5px;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+}
+
+#contact-btn a {
+  background-color: white;
+  width: 180px;
+  height: 60px;
+  margin: 10px;
+  color: #11A693;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  transition: all ease 0.3s;
+}
+
+#contact-btn a:hover {
+  font-size: 1.2rem;
+  background-color: #11A693;
+  color: white;
+  transition: all ease 0.3s;
+}
+
+#contact-form {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  background-color: white;
+}
+
+#contact-form form {
+  display: flex;
+  width: 70%;
+  height: 60vh;
+  background-color: black;
+}
+
+.contact-left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-right {
+  width: 60%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-left-heading {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #11A693;
+}
+
+.form-email, .form-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-email label, 
+.form-name label {
+  font-size: 24px;
+  color: white;
+}
+
+.form-email input, 
+.form-name input {
+  font-size: 20px;
+  font-family: inherit;
+  height: 30px;
+  width: 250px;
+  border: none;
+  outline: none;
+  background-color: rgb(34, 34, 34);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  margin: 10px 0px;
+}
+
+.form-email input::placeholder, 
+.form-name input::placeholder {
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.form-email input:focus, 
+.form-name input:focus {
+  border-bottom: 2px solid #11A693;
+  transition: all ease 0.3s;
+}
+
+.message {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message label {
+  font-size: 24px;
+  margin-bottom: 4px;
+  color: white;
+  margin-top: 24px;
+}
+
+.contact-right textarea {
+  width: 100%;
+  height: 300px;
+  border: none;
+  outline: none;
+  background-color: rgb(34, 34, 34);
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 10px;
+  font-family: inherit;
+  color: white;
+}
+
+.contact-right textarea::placeholder {
+  letter-spacing: 1px;
+}
+
+.contact-right button {
+  width: 100%;
+  height: 50px;
+  background-color: #11A693;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  margin: 0px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 16px;
+}

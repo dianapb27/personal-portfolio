@@ -1,0 +1,32 @@
+#about {
+  width: 80%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  color: white;
+}
+
+.about-text h1 {
+  font-size: 60px;
+  color: #11A693;
+  margin-bottom: 0px;
+}
+
+.about-text h2 {
+  font-style: italic;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.about-text p {
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.about-text p span {
+  color: #11A693;
+  font-weight: bolder;
+}
