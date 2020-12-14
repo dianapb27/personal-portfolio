@@ -93,7 +93,7 @@
   font-size: 20px;
   font-family: inherit;
   height: 30px;
-  width: 250px;
+  width: 350px;
   border: none;
   outline: none;
   background-color: rgb(34, 34, 34);
@@ -138,6 +138,7 @@
   padding: 10px;
   font-family: inherit;
   color: white;
+  margin-top: 10px;
 }
 
 .contact-right textarea::placeholder {

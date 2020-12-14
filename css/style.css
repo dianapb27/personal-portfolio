@@ -114,6 +114,8 @@ a {
   .form-name label,
   .message label {
     font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
   }
   .form-email input, 
   .form-name input,
