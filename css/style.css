@@ -76,6 +76,7 @@ a {
 @media(max-width: 1080px) {
   #main {
     background-image: none;
+    height: auto;
   }
   .name {
     left: 50%;
