@@ -55,21 +55,13 @@ a {
   }
   .projects-container {
     flex-wrap: wrap;
+    width: 70%;
   }
   .project-box {
     flex-grow: 1;
   }
   .project-box-text {
     text-align: center;
-  }
-  #about h1 {
-    font-size: 48px;
-  }
-  #about h2 {
-    font-size: 28px;
-  }
-  #about p {
-    font-size: 16px;
   }
 }
 
@@ -84,49 +76,54 @@ a {
   }
   .avatar-large {
     display: block;
+    margin-top: 100px;
   }
   .socials {
-    margin-top: 70px;
+    /* padding-top: 100px; */
   }
   #contact-form form {
     width: 95%;
   }
-  #about {
-    width: 95%;
+  #contact-form {
     height: auto;
+    box-sizing: border-box;
   }
-  #about h1,
-  .projects-heading h1 {
-    font-size: 40px;
+  #contact-form form {
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    align-items: center;
   }
-  #about h2,
-  .projects-heading h2 {
-    font-size: 24px;
+  .message {
+    margin: 0;
+    width: 100%;
   }
-  #about p {
-    font-size: 16px;
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    align-items: center;
   }
-  .contact-left-heading {
-    font-size: 2rem;
-    letter-spacing: 1px;
-  }
-  .form-email label, 
-  .form-name label,
-  .message label {
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 5px;
-  }
-  .form-email input, 
+  .form-email,
+  .form-name,
+  .form-email input,
   .form-name input,
-  .contact-right textarea {
-    font-size: 16px;
+  .message label,
+  .message textarea {
+    width: 100%;
   }
 }
 
 @media(max-width: 900px) {
   nav {
     justify-content: space-between;
+    height: 60px;
+    padding: 4px 20px;
+  }
+  #about {
+    width: 80%;
   }
   .logo {
     flex: 1;
@@ -174,53 +171,94 @@ a {
     font-size: 32px;
     float: right;
   }
+  #about h1,
+  .projects-heading h1 {
+    font-size: 40px;
+  }
+  #about h2,
+  .projects-heading h2 {
+    font-size: 24px;
+  }
+  #about p {
+    font-size: 16px;
+  }
 }
 
 @media(max-width: 720px) {
-  #main {
-    height: 120%;
-  }
-  #contact-form {
-    height: auto;
-    box-sizing: border-box;
-  }
   #contact-form form {
-    flex-direction: column;
-    height: auto;
-    width: 95%;
-    padding: 20px;
-    margin: 20px auto;
-    box-sizing: border-box;
-    align-items: center;
+    width: 90%;
   }
-  .message {
-    margin: 0;
+  .projects-container {
+    width: 90%;
   }
-  .contact-left,
-  .contact-right,
-  .form-email,
-  .form-name,
-  .form-email input,
-  .form-name input,
-  .message label,
-  .message textarea {
+  .contact-left-heading {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .form-email label, 
+  .form-name label,
+  .message label {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
     width: 100%;
   }
-}
-
-@media(max-width: 600px) {
-  .name {
-    width: 80%;
+  .form-email input, 
+  .form-name input {
+    font-size: 16px;
+  }
+  .contact-right textarea  {
+    font-size: 16px;
+  }
+  #about {
+    width: 90%;
   }
 }
 
 @media(max-width: 600px) {
+  .avatar-large {
+    margin-top: 0;
+  }
   .socials {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 100px;
   }
   .name {
     top: 50%;
     height: auto;
+    width: 80%;
+  }
+  #contact-btn h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .avatar-large {
+    height: 150px;
+    width: 150px;
+  }
+  .socials {
+    margin-top: 50px;
+  }
+  .name {
+    width: 90%;
+  }
+}
+
+@media(max-width: 340px) {
+  .avatar-large {
+    height: 100px;
+    width: 100px;
+  }
+  .socials {
+    margin-top: 30px;
+  }
+  .name h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+  .cv-btn {
+    padding: 10px 0;
   }
 }
