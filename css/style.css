@@ -76,7 +76,6 @@ a {
 @media(max-width: 1080px) {
   #main {
     background-image: none;
-    height: auto;
   }
   .name {
     left: 50%;
@@ -178,6 +177,9 @@ a {
 }
 
 @media(max-width: 720px) {
+  #main {
+    height: 120%;
+  }
   #contact-form {
     height: auto;
     box-sizing: border-box;
